@@ -8,7 +8,7 @@
 resource "aws_security_group" "directorSG" {
     name = "${var.prefix}-pcf_director_sg"
     description = "Allow incoming connections for Ops Manager."
-    vpc_id = "${aws_vpc.PcfVpc.id}"
+    vpc_id = "${var.vpc_id}"
     tags {
         Name = "${var.prefix}-Ops Manager Director Security Group"
     }
