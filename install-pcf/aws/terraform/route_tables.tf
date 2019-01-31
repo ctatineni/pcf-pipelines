@@ -15,7 +15,7 @@ resource "aws_route_table" "PublicSubnetRouteTable" {
 
 # AZ1 Routing table
 resource "aws_route_table" "PrivateSubnetRouteTable_az1" {
-    vpc_id = "${aws_vpc.PcfVpc.id}"
+    vpc_id = "${var.vpc_id}"
 
     route {
         cidr_block = "0.0.0.0/0"
@@ -29,7 +29,7 @@ resource "aws_route_table" "PrivateSubnetRouteTable_az1" {
 
 # AZ2 Routing table
 resource "aws_route_table" "SubnetRouteTable_az2" {
-    vpc_id = "${aws_vpc.PcfVpc.id}"
+    vpc_id = "${var.vpc_id}"
 
     route {
         cidr_block = "0.0.0.0/0"
@@ -43,7 +43,7 @@ resource "aws_route_table" "SubnetRouteTable_az2" {
 
 # AZ3 Routing table
 resource "aws_route_table" "SubnetRouteTable_az3" {
-    vpc_id = "${aws_vpc.PcfVpc.id}"
+    vpc_id = "${var.vpc_id}"
 
     route {
         cidr_block = "0.0.0.0/0"
