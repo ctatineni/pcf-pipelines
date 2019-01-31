@@ -3,7 +3,7 @@
 # here: https://github.com/pivotal-cf/terraforming-aws/blob/master/modules/infra/variables.tf
 # If the above has moved, please go to https://github.com/pivotal-cf/terraforming-aws and search
 # for "nat_ami_map"
-
+vpc_id: 
 amis_nat: ami-303b1458
 
 # This key must be a key with admin access
