@@ -5,6 +5,7 @@
 # for "nat_ami_map"
 vpc_id: 
 amis_nat: ami-303b1458
+igw_id: 
 
 # This key must be a key with admin access
 aws_access_key_id: CHANGEME
