@@ -1,7 +1,7 @@
 /*
   For Region
 */
-resource "aws_vpc" "PcfVpc" {
+/* resource "aws_vpc" "PcfVpc" {
     cidr_block = "${var.vpc_cidr}"
     enable_dns_hostnames = true
     tags {
@@ -13,7 +13,7 @@ resource "aws_internet_gateway" "internetGw" {
     tags {
         Name = "${var.prefix}-internet-gateway"
     }
-}
+} */
 
 # 3. NAT instance setup
 # 3.1 Security Group for NAT
