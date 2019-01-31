@@ -12,6 +12,8 @@ inputs:
 outputs:
   - name: terraform-state-output
 params:
+  vpc_id:
+  igw_id:
   DB_MASTER_USERNAME:
   DB_MASTER_PASSWORD:
   TERRAFORM_PREFIX:
