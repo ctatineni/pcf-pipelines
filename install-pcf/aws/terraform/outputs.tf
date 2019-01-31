@@ -14,7 +14,7 @@ output "az3" {
     value = "${var.aws_az3}"
 }
 output "vpc_id" {
-    value = "${aws_vpc.PcfVpc.id}"
+    value = "${var.vpc_id}"
 }
 output "vpc_cidr" {
     value = "${var.vpc_cidr}"
