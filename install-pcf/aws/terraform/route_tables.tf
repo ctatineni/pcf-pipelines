@@ -5,7 +5,7 @@ resource "aws_route_table" "PublicSubnetRouteTable" {
 
     route {
         cidr_block = "0.0.0.0/0"
-        gateway_id = "${aws_internet_gateway.internetGw.id}"
+        gateway_id = "${var.igw_id}"
     }
 
     tags {
