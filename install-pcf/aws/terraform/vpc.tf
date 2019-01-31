@@ -20,7 +20,7 @@ resource "aws_internet_gateway" "internetGw" {
 resource "aws_security_group" "nat_instance_sg" {
     name = "${var.prefix}-nat_instance_sg"
     description = "${var.prefix} NAT Instance Security Group"
-    vpc_id = "${aws_vpc.PcfVpc.id}"
+    vpc_id = "${var.vpc_id}"
     tags {
         Name = "${var.prefix}-NAT intance security group"
     }
