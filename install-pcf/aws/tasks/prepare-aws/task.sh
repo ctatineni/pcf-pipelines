@@ -22,6 +22,8 @@ terraform init pcf-pipelines/install-pcf/aws/terraform
 
 terraform plan \
   -state terraform-state/terraform.tfstate \
+  -var "vpc_id=${vpc_id}" \
+  -var "igw_id=${igw_id}" \
   -var "opsman_ami=${ami}" \
   -var "db_master_username=${DB_MASTER_USERNAME}" \
   -var "db_master_password=${DB_MASTER_PASSWORD}" \
