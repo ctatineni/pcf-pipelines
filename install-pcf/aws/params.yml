@@ -182,38 +182,37 @@ security_acknowledgement: CHANGEME
 #   * Dynamic Services network: Deploy dynamic services, **three subnets on three AZs to achieve HA**
 #   * RDS network: Deploy RDS databases, **three subnets on three AZs to achieve HA**
 #   * Infrastructure network: Deploy Bosh director
-dynamic_services_subnet_cidr_az1: 192.168.4.0/26
-dynamic_services_subnet_cidr_az2: 192.168.4.64/26
-dynamic_services_subnet_cidr_az3: 192.168.4.128/26
-dynamic_services_subnet_reserved_ranges_z1: 192.168.4.0 - 192.168.4.10
-dynamic_services_subnet_reserved_ranges_z2: 192.168.4.0 - 192.168.4.10
-dynamic_services_subnet_reserved_ranges_z3: 192.168.4.0 - 192.168.4.10
-ert_subnet_cidr_az1: 192.168.5.0/24
-ert_subnet_cidr_az2: 192.168.6.0/24
-ert_subnet_cidr_az3: 192.168.7.0/24
-ert_subnet_reserved_ranges_z1: 192.168.5.0 - 192.168.5.10
-ert_subnet_reserved_ranges_z2: 192.168.6.0 - 192.168.6.10
-ert_subnet_reserved_ranges_z3: 192.168.7.0 - 192.168.7.10
-infra_subnet_cidr_az1: 192.168.8.0/24
-infra_subnet_reserved_ranges_z1: 192.168.8.0 - 192.168.8.10
-nat_ip_az1: 192.168.9.6
-nat_ip_az2: 192.168.10.6
-nat_ip_az3: 192.168.11.6
+dynamic_services_subnet_cidr_az1: 192.168.112.0/22
+dynamic_services_subnet_cidr_az2: 192.168.128.0/22
+dynamic_services_subnet_cidr_az3: 192.168.144.0/22
+dynamic_services_subnet_reserved_ranges_z1: 192.168.112.0 - 192.168.112.10
+dynamic_services_subnet_reserved_ranges_z2: 192.168.128.0 - 192.168.128.10
+dynamic_services_subnet_reserved_ranges_z3: 192.168.144.0 - 192.168.144.10
+ert_subnet_cidr_az1: 192.168.16.0/20
+ert_subnet_cidr_az2: 192.168.32.0/20
+ert_subnet_cidr_az3: 192.168.48.0/20
+ert_subnet_reserved_ranges_z1: 192.168.16.0 - 192.168.16.10
+ert_subnet_reserved_ranges_z2: 192.168.32.0 - 192.168.32.10
+ert_subnet_reserved_ranges_z3: 192.168.48.0 - 192.168.48.10
+infra_subnet_cidr_az1: 192.168.6.0/24
+infra_subnet_reserved_ranges_z1: 192.168.6.0 - 192.168.6.10
+nat_ip_az1: 192.168.0.6
+nat_ip_az2: 192.168.1.6
+nat_ip_az3: 192.168.2.6
 opsman_ip_az1: 192.168.0.7
-public_subnet_cidr_az1: 192.168.9.0/24
-public_subnet_cidr_az2: 192.168.10.0/24
-public_subnet_cidr_az3: 192.168.11.0/24
-rds_subnet_cidr_az1: 192.168.12.0/22
-rds_subnet_cidr_az2: 192.168.12.64/24
-rds_subnet_cidr_az3: 192.168.12.128/24
-services_subnet_cidr_az1: 192.168.13.0/26
-services_subnet_cidr_az2: 192.168.14.0/26
-services_subnet_cidr_az3: 192.168.15.0/26
-services_subnet_reserved_ranges_z1: 192.168.13.0 - 192.168.13.10
-services_subnet_reserved_ranges_z2: 192.168.14.0 - 192.168.14.10
-services_subnet_reserved_ranges_z3: 192.168.15.0 - 192.168.15.10
-vpc_cidr: 192.168.0.0/20
-
+public_subnet_cidr_az1: 192.168.0.0/24
+public_subnet_cidr_az2: 192.168.1.0/24
+public_subnet_cidr_az3: 192.168.2.0/24
+rds_subnet_cidr_az1: 192.168.3.0/24
+rds_subnet_cidr_az2: 192.168.4.0/24
+rds_subnet_cidr_az3: 192.168.5.0/24
+services_subnet_cidr_az1: 192.168.64.0/20
+services_subnet_cidr_az2: 192.168.80.0/20
+services_subnet_cidr_az3: 192.168.96.0/20
+services_subnet_reserved_ranges_z1: 192.168.64.0 - 192.168.64.10
+services_subnet_reserved_ranges_z2: 192.168.80.0 - 192.168.80.10
+services_subnet_reserved_ranges_z3: 192.168.96.0 - 192.168.96.10
+vpc_cidr: 192.168.0.0/16
 # Prefix to use for Terraform-managed infrastructure, e.g. 'pcf-terraform'
 # Must be globally unique.
 terraform_prefix: CHANGEME
