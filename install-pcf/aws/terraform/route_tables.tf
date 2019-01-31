@@ -1,7 +1,7 @@
 # Routing Tables for all subnets
 
 resource "aws_route_table" "PublicSubnetRouteTable" {
-    vpc_id = "${aws_vpc.PcfVpc.id}"
+    vpc_id = "${var.vpc_id}"
 
     route {
         cidr_block = "0.0.0.0/0"
