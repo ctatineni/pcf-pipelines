@@ -12,6 +12,8 @@ variable "aws_az1" {}
 variable "aws_az2" {}
 variable "aws_az3" {}
 variable "route53_zone_id" {}
+variable "vpc_id" {}
+variable "igw_id" {}
 
 /*
 * used for configuring ingress rules to ops manager vm
